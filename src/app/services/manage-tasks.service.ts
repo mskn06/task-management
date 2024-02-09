@@ -15,6 +15,6 @@ export class ManageTasksService {
 
   setBoard(board: any) {
     // console.log('Board: ', board);
-    localStorage.setItem('board', JSON.stringify(board));
+    // localStorage.setItem('board', JSON.stringify(board));
   }
 }

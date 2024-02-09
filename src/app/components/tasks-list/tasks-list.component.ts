@@ -52,7 +52,7 @@ export class TasksListComponent implements OnInit {
 
   public ngOnInit(): void {
     console.log(this.board);
-    localStorage.setItem('board', JSON.stringify(this.board));
+    // localStorage.setItem('board', JSON.stringify(this.board));
   }
 
   public dropGrid(event: CdkDragDrop<string[]>): void {
