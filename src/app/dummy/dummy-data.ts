@@ -1,0 +1,68 @@
+import { PRIORITY, STATUS } from '../constants/contants';
+
+export const TASKS = [
+  {
+    id: 1,
+    title: 'create components 1',
+    description: 'testing the 1 tasks',
+    priorityLevel: PRIORITY[0],
+    status: STATUS[0],
+    dueDate: new Date('11-02-2024'),
+  },
+  {
+    id: 2,
+    title: 'create components 2',
+    description: 'testing the 2 tasks',
+    priorityLevel: PRIORITY[1],
+    status: STATUS[0],
+    dueDate: new Date('12-02-2024'),
+  },
+  {
+    id: 3,
+    title: 'create components 3',
+    description: 'testing the 3 tasks',
+    priorityLevel: PRIORITY[2],
+    status: STATUS[1],
+    dueDate: new Date('13-02-2024'),
+  },
+  {
+    id: 4,
+    title: 'create components 4',
+    description: 'testing the 4 tasks',
+    priorityLevel: PRIORITY[3],
+    status: STATUS[1],
+    dueDate: new Date('14-02-2024'),
+  },
+  {
+    id: 5,
+    title: 'create components 5',
+    description: 'testing the 5 tasks',
+    priorityLevel: PRIORITY[0],
+    status: STATUS[2],
+    dueDate: new Date('15-02-2024'),
+  },
+  {
+    id: 6,
+    title: 'create components 6',
+    description: 'testing the 6 tasks',
+    priorityLevel: PRIORITY[1],
+    status: STATUS[2],
+    dueDate: new Date('16-02-2024'),
+  },
+  {
+    id: 7,
+    title: 'create components 7',
+    description: 'testing the 7 tasks',
+    priorityLevel: PRIORITY[2],
+    status: STATUS[3],
+    dueDate: new Date('17-02-2024'),
+  },
+  {
+    id: 8,
+    title: 'create components 8',
+    description: 'testing the 8 tasks',
+    priorityLevel: PRIORITY[3],
+    status: STATUS[3],
+    dueDate: new Date('18-02-2024'),
+  },
+];

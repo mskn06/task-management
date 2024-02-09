@@ -1,0 +1,49 @@
+<div class="root">
+  <div class="nav">
+    <button mat-raised-button color="primary" routerLink="/task-details">
+      Add Task
+    </button>
+  </div>
+  <div class="board">
+    <div class="board-wrapper">
+      <div class="board-columns">
+        <div
+          cdkDropList
+          cdkDropListOrientation="horizontal"
+          class="board-columns"
+          (cdkDropListDropped)="dropGrid($event)"
+        >
+          @for(column of board.columns; track column){
+          <div cdkDragLockAxis="x" class="board-column" cdkDrag>
+            <div class="column-title" cdkDragHandle>
+              {{ column.name }}
+            </div>
+            <div
+              class="tasks-container"
+              id="{{ column.id }}"
+              [cdkDropListConnectedTo]="['1', '2', '3', '4']"
+              cdkDropList
+              [cdkDropListData]="column.tasks"
+              (cdkDropListDropped)="drop($event)"
+            >
+              @for (item of column.tasks; track item) {
+              <div class="task" cdkDrag [cdkDragData]="item">
+                <div class="task-container">
+                  <a
+                    [routerLink]="['/task-details/' + item.id]"
+                    routerLinkActive="task-details"
+                  >
+                    {{ item.title }}
+                  </a>
+                </div>
+              </div>
+              }
+            </div>
+          </div>
+
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
