@@ -1,7 +1,19 @@
-# TaskManagement
+# TaskManagement by Muskaan Jain
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+Features:
 
-## Development server
+1. Added drag-n-drop functionality
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. Added Angular features: Routing, Localstorage, service, Modal
+
+## To Run on local:
+
+1. Make sure you have the latest versions of node, npm, angular cli, angular core
+
+2. Run `npm install` to install all the dependencies.
+
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Hosted on Netlify:
+
+https://task-management-for-nest.netlify.app
