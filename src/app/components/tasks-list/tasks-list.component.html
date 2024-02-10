@@ -1,8 +1,7 @@
 <div class="root">
   <div class="nav">
-    <button mat-raised-button color="primary" routerLink="/task-details">
-      Add Task
-    </button>
+    <!-- dialog box -->
+    <button mat-raised-button (click)="openDialog()">Add Task</button>
   </div>
   <div class="board">
     <div class="board-wrapper">
@@ -28,19 +27,16 @@
             >
               @for (item of column.tasks; track item) {
               <div class="task" cdkDrag [cdkDragData]="item">
-                <div class="task-container">
-                  <a
-                    [routerLink]="['/task-details/' + item.id]"
-                    routerLinkActive="task-details"
-                  >
-                    {{ item.title }}
-                  </a>
+                <div
+                  class="task-container"
+                  (click)="navigateToTaskDetails(item)"
+                >
+                  {{ item.title }}
                 </div>
               </div>
               }
             </div>
           </div>
-
           }
         </div>
       </div>

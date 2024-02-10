@@ -56,6 +56,9 @@
 
 .task {
   display: flex;
+  justify-content: space-between;
+  min-width: 160px;
+
   padding: 15px 12px;
   background: white;
   border-bottom: solid 1px #ddd;
@@ -83,4 +86,8 @@
 .nav {
   display: flex;
   justify-content: end;
+}
+
+.task-container {
+  cursor: pointer;
 }

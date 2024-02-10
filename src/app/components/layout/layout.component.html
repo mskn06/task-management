@@ -4,20 +4,11 @@
       <button mat-raised-button color="primary" routerLink="/tasks-list">
         tasks-lists
       </button>
-      <button mat-raised-button color="primary" routerLink="/add-task">
-        add-task
-      </button>
-      <button mat-raised-button color="primary" routerLink="/task-details">
-        task-details
-      </button>
     </div>
   </mat-drawer>
 
   <div class="sidenav-content">
-    <!-- <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button> -->
-
+    <!-- router -->
     <router-outlet />
   </div>
 </mat-drawer-container>
