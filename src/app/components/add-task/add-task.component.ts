@@ -46,14 +46,14 @@ export class AddTaskComponent {
   }
 
   changePriorityLevel(e: any) {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     this.priorityLevel.setValue(e.target.value, {
       onlySelf: true,
     });
   }
 
   changeStatus(e: any) {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     this.status.setValue(e.target.value, {
       onlySelf: true,
     });

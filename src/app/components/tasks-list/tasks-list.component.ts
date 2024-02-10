@@ -66,7 +66,6 @@ export class TasksListComponent implements OnInit {
 
   public ngOnInit(): void {
     console.log(this.board);
-    // localStorage.setItem('board', JSON.stringify(this.board));
   }
 
   public dropGrid(event: CdkDragDrop<string[]>): void {
@@ -96,13 +95,9 @@ export class TasksListComponent implements OnInit {
       this.board.columns[Number(event.previousContainer.id)].tasks
         .filter((item) => item.id === event.item.data.id)
         .map((item) => (item.status = STATUS[Number(event.container.id) - 1]));
-
-      // this.Tasks.filter((item) => item.id === event.item.data.id).map(
-      //   (item) => (item.status = STATUS[Number(event.container.id) - 1])
-      // );
     }
 
-    console.log(this.board);
+    // console.log(this.board);
   }
 
   updateTasks() {
